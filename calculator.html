@@ -3,13 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Calculator</title>
-	
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	
+	<form name="myForm">
+	<div class="main">
+		<input  type="text" id="gth" onkeypress="return event.charCode >= 48 
+            && event.charCode <= 57" name="textview" disabled>
 	
 <table>
+	<tr>
+		<td><input type="button" class="button" OnClick="myForm.textview.value+='%';
+			  size = myForm.textview.value.length; 
+                n = Number(myForm.textview.value.substring(0, size-1)); 
+                myForm.textview.value = n/100; " value="%"></td>
+<td><input type="button" class="button" OnClick="myForm.textview.value = 1/eval(myForm.textview.value) "  value="1/x"></td>		<td><input type="button" class="button" OnClick="myForm.textview.value=''" value="C"></td>
+		<td><input type="button" class="button" OnClick="size = myForm.textview.value.length; 
+            myForm.textview.value = myForm.textview.value.substring(0, size-1); " id="backspace"></td>
+		<td><input type="button" class="button" OnClick="myForm.textview.value+='/'" id="divide"value="÷"></td>
 	
+	</tr>
 	<tr>
 		<td><input type="button" class="button"  OnClick="myForm.textview.value = Math.sqrt(eval(myForm.textview.value)) " value="√x"></td>
 		<td><input type="button" class="button1" OnClick="myForm.textview.value+='7'" value="7" ></td>
@@ -45,7 +58,8 @@
 	</tr>
 
 </table></div></form>
-       
 
+
+	<script src="calculation.js"></script>
 </body>
 </html>
