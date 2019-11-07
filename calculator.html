@@ -8,58 +8,53 @@
 <body>
 	<form name="myForm">
 	<div class="main">
-		<input  type="text" id="gth" onkeypress="return event.charCode >= 48 
+		<input id="hj" type="text" id="gth" onkeypress="return event.charCode >= 48 
             && event.charCode <= 57" name="textview" disabled>
 	
 <table>
 	<tr>
-		<td><input type="button" class="button" OnClick="myForm.textview.value+='%';
-			  size = myForm.textview.value.length; 
-                n = Number(myForm.textview.value.substring(0, size-1)); 
-                myForm.textview.value = n/100; " value="%"></td>
-<td><input type="button" class="button" OnClick="myForm.textview.value = 1/eval(myForm.textview.value) "  value="1/x"></td>		<td><input type="button" class="button" OnClick="myForm.textview.value=''" value="C"></td>
-		<td><input type="button" class="button" OnClick="size = myForm.textview.value.length; 
-            myForm.textview.value = myForm.textview.value.substring(0, size-1); " id="backspace"></td>
-		<td><input type="button" class="button" OnClick="myForm.textview.value+='/'" id="divide"value="÷"></td>
+		<td><input type="button" class="button" id="pr" value="%"></td>
+<td><input type="button" id="dividebyone" class="button" value="1/x"></td>		
+<td><input type="button" id="clear" class="button"  value="C"></td>
+		<td><input type="button" class="button"  id="backspace"></td>
+		<td><input type="button" class="button"  id="divide"value="÷"></td>
 	
 	</tr>
 	<tr>
-		<td><input type="button" class="button"  OnClick="myForm.textview.value = Math.sqrt(eval(myForm.textview.value)) " value="√x"></td>
-		<td><input type="button" class="button1" OnClick="myForm.textview.value+='7'" value="7" ></td>
-		<td><input type="button" class="button1" OnClick="myForm.textview.value+='8'" value="8"></td>
-		<td><input type="button" class="button1" OnClick="myForm.textview.value+='9'" value="9"></td>
-		<td><input type="button" class="button" OnClick="myForm.textview.value+='*'" value="x"></td>
+		<td><input type="button" class="button" id="sqrt"  value="√x"></td>
+		<td><input type="button" class="button1" id="sevens" value="7" ></td>
+		<td><input type="button" class="button1" id="eights"  value="8"></td>
+		<td><input type="button" class="button1" id="nines" value="9"></td>
+		<td><input type="button" class="button" id="multiply" value="x"></td>
 		
 	</tr>
 	<tr>
-		<td><input type="button" class="button"  OnClick="myForm.textview.value = Math.pow(eval(myForm.textview.value), 2) "  value="x²"></td>
-		<td><input type="button" class="button1" OnClick="myForm.textview.value+='4'" value="4"></td>
-		<td><input type="button" class="button1" OnClick="myForm.textview.value+='5'" value="5"></td>
-		<td><input type="button" class="button1" OnClick="myForm.textview.value+='6'" value="6"></td>
-		<td><input type="button" class="button" OnClick="myForm.textview.value+='-'" value="-"></td>
+		<td><input type="button" class="button"  id="square" value="x²"></td>
+		<td><input type="button" class="button1" id="four" value="4"></td>
+		<td><input type="button" class="button1" id="five" value="5"></td>
+		<td><input type="button" class="button1" id="six" value="6"></td>
+		<td><input type="button" class="button" id="minus" value="-"></td>
 		
 	</tr>
 	<tr>
-		<td><input type="button" class="button" OnClick="myForm.textview.value = Math.pow(eval(myForm.textview.value), 3) " value="x³"></td>
-		<td><input type="button" class="button1" OnClick="myForm.textview.value+='1'" value="1"></td>
-		<td><input type="button" class="button1" OnClick="myForm.textview.value+='2'" value="2"></td>
-		<td><input type="button" class="button1" OnClick="myForm.textview.value+='3'" value="3"></td>
-		<td><input type="button" class="button" OnClick="myForm.textview.value+='+'" value="+"></td>
+		<td><input type="button" class="button" id="cube" value="x³"></td>
+		<td><input type="button" class="button1" id="one" value="1"></td>
+		<td><input type="button" class="button1" id="two" value="2"></td>
+		<td><input type="button" class="button1" id="three" value="3"></td>
+		<td><input type="button" class="button" id="plus" value="+"></td>
 		
 	</tr>
 	<tr>
-		<td><input type="button" class="button" OnClick="myForm.textview.value+='('" value="("></td>
-		<td><input type="button" class="button" OnClick="myForm.textview.value+=')'" value=")"></td>
-		<td><input type="button" class="button1" OnClick="myForm.textview.value+='0'" value="0"></td>
-		<td><input type="button" class="button" OnClick="myForm.textview.value+='.'" value=","></td>
-		<td ><input type="button" class="button" id="space"  OnClick="myForm.textview.value = eval(myForm.textview.value) "  value="="></td>
+		<td><input type="button" class="button" id="bracketone" value="("></td>
+		<td><input type="button" class="button" id="brackettwo" value=")"></td>
+		<td><input type="button" class="button1" id="zero" value="0"></td>
+		<td><input type="button" class="button" id="point" value=","></td>
+		<td ><input type="button" class="button" id="space"   value="="></td>
 
 		
 	</tr>
 
 </table></div></form>
-
-
 	<script src="calculation.js"></script>
 </body>
 </html>
