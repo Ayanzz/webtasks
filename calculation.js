@@ -60,5 +60,57 @@ var numberfour = document.getElementById("four");
 numberfour.onclick = function(){
      myForm.textview.value+='4'
 }
+var numberfive = document.getElementById("five");
+numberfive.onclick = function(){
+     myForm.textview.value+='5'
+}
+var numbersix = document.getElementById("six");
+numbersix.onclick = function(){
+     myForm.textview.value+='6'
+}
+var numberminus = document.getElementById("minus");
+numberminus.onclick = function(){
+myForm.textview.value+='-'
+}
+var numbercube = document.getElementById("cube");
+numbercube.onclick = function(){
+    myForm.textview.value = Math.pow(eval(myForm.textview.value), 3) 
+}
+var numberone = document.getElementById("one");
+numberone.onclick = function(){
+     myForm.textview.value+='1'
+}
+var numbertwo = document.getElementById("two");
+numbertwo.onclick = function(){
+     myForm.textview.value+='2'
+}
+var numberthree = document.getElementById("three");
+numberthree.onclick = function(){
+     myForm.textview.value+='3'
+}
+var numberplus = document.getElementById("plus");
+numberplus.onclick = function(){
+    myForm.textview.value+='+'
+}
+var numberbracketone = document.getElementById("bracketone");
+numberbracketone.onclick = function(){
+    myForm.textview.value+='('
+}
+var numberbrackettwo = document.getElementById("brackettwo");
+numberbrackettwo.onclick = function(){
+    myForm.textview.value+=')'
+}
+var numberpoint = document.getElementById("point");
+numberpoint.onclick = function(){
+    myForm.textview.value+='.'
+}
+var numberzero = document.getElementById("zero");
+numberzero.onclick = function(){
+    myForm.textview.value+='0'
+}
+var numberequal = document.getElementById("space");
+numberequal.onclick = function(){
+   myForm.textview.value = eval(myForm.textview.value)
+}
 
 
