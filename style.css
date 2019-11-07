@@ -2,19 +2,38 @@
 	margin:0;
 	padding:0;
 }
+body{
+		background-image:url("https://images.unsplash.com/photo-1468083684825-012f39547b23?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+		-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: rgba(0,0,0,0,5);
+}
 .button{
 	width:145px;
 	height:80px;
 	font-size:35px;
 
+
+}
+#space{
+	background-color: orange;
+}
+#space:hover{
+	background-color: red;
 }
 #gth{
 	display: block;
 		height:150px;
+		background-color:white;
+			font-size:100px;
+			font-style: oblique;
+
 
 }
 #square{
-	background-image: url("https://image.flaticon.com/icons/svg/36/36932.svg");
+	
 	background-repeat:no-repeat;
 	display:block;
 	margin-left: auto;
@@ -27,12 +46,12 @@ background-position: 23px 20px;
 	display:block;
 	margin-left: auto;
 	margin-right: auto;
-background-position: 11px 13px;
+background-position: 45px 13px;
 background-size: 45px;
 
 }
 #three{
-	background-image: url("photo_2019-11-07_01-40-07.jpg");
+	
 	background-repeat:no-repeat;
 	display:block;
 	margin-left: auto;
@@ -40,14 +59,15 @@ background-size: 45px;
 background-position: 23px 16px;
 background-size: 35px;
 }
-#space{width:294px;}
 input{
-	width:750px;
+	width:731px;
 	height:100px;
-	border-color:blue;
+	background-color:#BCBCBC;
+	border-radius: 10px;
+
 }
 input:hover{
-	border-color: white;
+	background-color: grey;
 }
 #divide{
 	font-size:70px;
@@ -57,4 +77,15 @@ input:hover{
 	top: 50%;
 	left:50%;
 	transform:translateX(-50%)translateY(-50%);
+}
+
+.button1{
+	width:145px;
+	height:80px;
+	font-size:35px;
+	background-color:#ffffff;
+
+}
+#hj{
+	font-size: 90px;
 }
