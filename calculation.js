@@ -26,3 +26,25 @@
                 /* Otherwise evalute and execute output */ 
                 calc.display.value = eval(calc.display.value); 
         } 
+        function add(val) 
+         { 
+             document.getElementById("result").value+=val 
+         } 
+           
+         //function that evaluates the digit and return result 
+         function solve() 
+         { 
+             let x = document.getElementById("result").value 
+             let y = eval(x) 
+             document.getElementById("result").value = y 
+         } 
+           
+         //function that clear the display 
+         function clear() 
+         { 
+             document.getElementById("result").value = "" 
+         } 
+          function backspace(calc) {                                              
+            size = calc.display.value.length; 
+            calc.display.value = calc.display.value.substring(0, size-1); 
+        } 
